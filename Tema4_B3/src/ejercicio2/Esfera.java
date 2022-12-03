@@ -22,7 +22,7 @@ public class Esfera {
 	//No tiene parámetros de entrada porque hemos declarado radio como variable global.
 	public static double superficie () {
 		
-		double superficie=0;
+		double superficie;
 		
 		superficie= 4*Math.PI*Math.pow(radio, 2);//Equivale a 4*PI*radio^2
 		
@@ -32,8 +32,12 @@ public class Esfera {
 	//Creamos otra función estática para el volumen.
 	public static double volumen () {
 		
+		double volumen;
+		
+		volumen= ((4*Math.PI)/3)*Math.pow(radio, 3); //Equivale a (4*PI/3)*radio^3
+		
+		return volumen;
+		
 	}
 	
-	
-
 }
