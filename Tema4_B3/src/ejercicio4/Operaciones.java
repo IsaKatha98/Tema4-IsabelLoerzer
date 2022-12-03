@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicio4;
 
 /*Crea una clase denominada Operaciones, la cual va a contener una función no estática 
  *por cada una de las operaciones básicas: suma, resta, multiplicación y división. Es decir, 
@@ -9,13 +9,18 @@ package ejercicio3;
 
 public class Operaciones {
 	
+	//Declaramos variables globales no estáticas.
+	
+		double A; //Variable númerica que introduce el usuario.
+		double B;//Segunda variable introducida por el usuario.
+
 		
 	//Establecemos las funciones no estáticas sin parámetros.
 	public double suma () {
 		
 		double suma;
 		
-		suma= a+b;
+		suma= A+B;
 		
 		return suma;
 	}
@@ -25,7 +30,7 @@ public class Operaciones {
 		
 		double resta;
 		
-		resta=a-b;
+		resta=A-B;
 		
 		return resta;
 	}
@@ -34,7 +39,7 @@ public class Operaciones {
 		
 		double mult;
 		
-		mult=a*b;
+		mult=A*B;
 		
 		return mult;
 	}
@@ -44,7 +49,7 @@ public class Operaciones {
 		
 		double div;
 		
-		div= a/b;
+		div= A/B;
 		
 		return div;
 	}

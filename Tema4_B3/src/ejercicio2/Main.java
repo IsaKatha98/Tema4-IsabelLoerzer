@@ -12,7 +12,7 @@ public class Main {
 				
 		//Le pediremos al usuario que introduzca los datos y los guardaremos en la variable radio, que se encuentra en otra clase..
 				
-		System.out.print("Introduzca el un número (puede tener decimales) y pulse Intro: ");
+		System.out.print("Introduzca el radio de la esfera (puede tener decimales) y pulse Intro: ");
 		Esfera.radio=sc.nextDouble();
 				
 		//Invocamos las funciones.

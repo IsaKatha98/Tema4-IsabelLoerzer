@@ -2,41 +2,43 @@ package ejercicio3;
 
 import java.util.Scanner;
 
-import ejercicio1.Numeros;
+import ejercicio4.Operaciones;
 
 public class Main {
-	
-	//Declaramos variables globales no estáticas.
-	
-	double numA; //Variable númerica que introduce el usuario.
-	double numB;//Segunda variable introducida por el usuario.
 
 	public static void main(String[] args) {
-			
+		
+		//Declaramos las variables a pedir al usuario.
+		
+		int num1;
+		int num2;
+		int num3;
+		
 		/*Creamos un escáner para poder leer los datos que introduzca el usuario por
 		la consola. */
 								
 		Scanner sc= new Scanner (System.in); 
-		
-		//Creamos un objeto para poder guardar las variables no estáticas.
-		Operaciones o= new Operaciones();
 								
 		//Le pediremos al usuario que introduzca los datos y los guardaremos en la variable.
 								
 		System.out.print("Introduzca un número y pulse Intro: ");
-		o.numA=sc.nextDouble();
+		num1= sc.nextInt();
 		System.out.print("Introduzca otro número y pulse Intro: ");
-		o.numB=sc.nextDouble();
+		num2=sc.nextInt();
+		System.out.print("Introduzca otro número y pulse Intro: ");
+		num3=sc.nextInt();
 		
-		//Creamos un objeto nuevo, porque son funciones no estáticas.
-		Operaciones objeto= new Operaciones();
-				
-		//Con ese objeto, llamamos a las funciones. Lo podemos hacer directamente en el sysout, para que se imprima el resultado.
-				
-		System.out.println("Suma: "+objeto.suma(o.numA, o.numB));
-		System.out.println("Resta: "+objeto.resta(variables.a, variables.b));
-		System.out.println("Multiplicación: "+ objeto.mult(numA, numB));
-				
+		//Al ser funciones estáticas no necesitamos crear un objeto, podemos llamarlas directamente desde la clase. Imprimimos.
+	
+		System.out.println("Función 1: ");
+		NumerosAleatorios.numerosAleatorios(num1);
+		
+		System.out.println("Función 2: ");
+		NumerosAleatorios.numerosAleatorios (num1, num2);
+		
+		System.out.println("Función 3: ");
+		NumerosAleatorios.numerosAleatorios (num1, num2, num3);
+			
 		//Cerramos el escáner.
 		sc.close();
 
