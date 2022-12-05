@@ -11,8 +11,8 @@ public class Operaciones {
 	
 	//Declaramos variables globales no estáticas.
 	
-		double A; //Variable númerica que introduce el usuario.
-		double B;//Segunda variable introducida por el usuario.
+	double A; //Variable númerica que introduce el usuario.
+	double B;//Segunda variable introducida por el usuario.
 
 		
 	//Establecemos las funciones no estáticas sin parámetros.
@@ -47,9 +47,14 @@ public class Operaciones {
 	//Precondición b!=0
 	public double div () {
 		
-		double div;
+		double div=0;
 		
-		div= A/B;
+		if (B!=0) {
+		
+			div= A/B;
+			
+		}
+		
 		
 		return div;
 	}

@@ -1,6 +1,14 @@
 package ejercicio1;
 
 public class Numeros {
+
+	/*Crea una clase de nombre Numeros. Esta clase debe contener las siguientes dos funciones no estáticas:
+
+-	boolean esPrimo(int numero): Esta función devuelve true si el número introducido 
+	por parámetro es primo y false en caso contrario.
+
+- 	boolean esCapicua(int numero): Esta función devuelve true si el número introducido 
+	es capicúa y false en caso contrario.*/
 	
 	//Establecemos una función no estática para saber si un número es primo o no.
 	boolean esPrimo (int n) {
@@ -36,17 +44,13 @@ public class Numeros {
 					
 		} else if (n>=10) {
 					
-			/*Ahora, hallamos el inverso de num. Utilizamos la variable aux para no perder
-			 *el valor original de num.*/
-						
+			//Ahora, hallamos el inverso de num. Utilizamos la variable aux para no perder el valor original de num.			
 			aux = n;
 						
-			//Abrimos un bucle que se repetirá mienstras aux sea distinto de 0.
-				    
+			//Abrimos un bucle que se repetirá mienstras aux sea distinto de 0.	    
 			while (aux!=0) {
 				
 				//Hacemos el módulo de auxiliar entre 10 y lo guardamos en la variable unidad.Esto guarda la última unidad de num/aux.
-				
 				unidad = aux % 10;
 				        	
 				//Se lo sumamos a inverso (valor actual=0) por diez más la unidad.
@@ -58,7 +62,6 @@ public class Numeros {
 			}
 			
 			//Establecemos una condición en el que se devuelva la variable esCapicua con su valor correspondiente.
-			 
 	        if (n == inverso){
 	            
 	        	esCapicua= true;
@@ -73,8 +76,6 @@ public class Numeros {
 
 		//Devolvemos la variable.
 		return esCapicua;
-	}
-		
-	
+	}	
 
 }

@@ -2,10 +2,13 @@ package ejercicio5;
 
 public class FuncionesRecursivas {
 	
+	//Una función recursiva es una que se llama a sí misma.
+	
 	public static int sumatorio (int numero) {
 		
 		int suma=0;
 		
+		//Caso base.
 		if (numero==1) {
 			
 			suma=1;
@@ -48,7 +51,7 @@ public class FuncionesRecursivas {
 		//Caso base.
 		} else if (n==0||n==1) {
 			
-			fibonacci=n;
+			fibonacci=1;
 		
 		
 		}

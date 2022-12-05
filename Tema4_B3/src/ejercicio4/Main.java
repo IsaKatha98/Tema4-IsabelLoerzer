@@ -23,8 +23,8 @@ public class Main {
 		System.out.print("Introduzca otro número y pulse Intro: ");
 		objeto.B=sc.nextDouble();
 				
-		//Con ese objeto, llamamos a las funciones. Lo podemos hacer directamente en el sysout, para que se imprima el resultado.
-				
+		//Con ese objeto, llamamos a las funciones. Lo podemos hacer directamente en el sysout, para que se imprima el resultado.	
+		//En este caso, no necesitamos parámetros de entrada, ya que son variables globales.
 		System.out.println("Suma: "+objeto.suma());
 		System.out.println("Resta: "+objeto.resta());
 		System.out.println("Multiplicación: "+ objeto.mult());
