@@ -15,7 +15,7 @@ public class Main {
 		System.out.print("Introduzca el radio de la esfera (puede tener decimales) y pulse Intro: ");
 		Esfera.radio=sc.nextDouble();
 				
-		//Invocamos las funciones.
+		//Invocamos las funciones; al ser estáticas, no hace falta crear un objeto,
 		
 		System.out.println("La superficie de la esfera es de: "+String.format("%.2f", Esfera.superficie()));
 		System.out.println("El volumen de la esfera es de: "+ String.format("%.2f", Esfera.volumen()));

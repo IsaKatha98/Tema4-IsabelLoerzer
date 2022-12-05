@@ -44,7 +44,7 @@ public class Operaciones {
 		return mult;
 	}
 	
-	//Precondición b!=0
+	//Precondición B!=0
 	public double div () {
 		
 		double div=0;
@@ -52,9 +52,7 @@ public class Operaciones {
 		if (B!=0) {
 		
 			div= A/B;
-			
 		}
-		
 		
 		return div;
 	}
